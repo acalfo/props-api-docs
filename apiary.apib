@@ -4,25 +4,21 @@ FORMAT: 1A
 ## GET /places
 
 + Response 200 (application/json)
-
-        {
-            "places" : [{
-                "id" : "fRge5",
-                "name" : "Battery Harris"
-            }]
-        }
-
-
+    + Attributes
+        - places (array[Place])
+    
 ## GET /places/{id}
 
 + Parameters
   + id: `fRge5` - The unique ID of the place.
 
 + Response 200 (application/json)
+    + Attributes
+        - places (Place)
 
-        {
-            "places" : {
-                "id" : "fRge5",
-                "name" : "Battery Harris"
-            }
-        }
+# Data Structures
+
+## Place (object)
+
+- id: `fRge5` (string)
+- name: `Battery Harris` (string)
